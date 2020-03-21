@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="images/x-con" href="images/favicon.ico">
+    <script src="js/c4c1587070.js" crossorigin="anonymous"></script>
+    <!-- FUENTES GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+    <!--JqueryUI-->
+    <script src="js/jquery-3.4.1.min.js" charset="utf-8"> </script>
+    <!-- ARCHIVOS Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ARCHIVOS CSS PERSONALIZADOS  -->
+    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+    <!--Bootstrap datepicker-->
+    <script src="bootstrap-datepicker/js/bootstrap-datepicker.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="bootstrap-datepicker/css/bootstrap-datepicker.css">
+
+
+    <title>issue</title>
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class=" border-right shadow-lg" style="background: rgb(235, 235, 235);" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center "><img src="/images/issue.png" style="width: 120px;" alt=""> </div>
+            <hr class="bg-primary ">
+            <a href="">
+                <div class="row">
+                    <div class="col-2 text-left ml-4"><img src="/images/mar.png" style="width: 30px;" alt=""></div>
+                    <div class="col pt-2">
+                        <p style="color: rgb(0, 0, 0);">Marshall Matters</p>
+                    </div>
+                </div>
+            </a>
+
+            <div class="list-group list-group-flush p-2 ">
+                <a href="#" class="list-group-item list-group-item-action bg-light nav-link rounded "
+                    id="opcion-selecccionada">
+                    <div class="row">
+                        <div class="col-3 text-center ml-1">
+                            <i class="fas fa-home centrado" style="font-size: 2rem; color:rgb(255, 255, 255);"></i>
+                        </div>
+                        <div class="col">
+                            <p style="color: rgb(255, 255, 255);" class="mt-3">Menu principal</p>
+                        </div>
+                    </div>
+                </a>
+
+                <p class="list-group-item list-group-item-action bg-light font-weight-bolder pt-4">Opciones</p>
+
+                <a href="#" class="list-group-item list-group-item-action bg-light nav-link rounded "
+                    id="opcion-deselecccionada">
+                    <div class="row">
+                        <div class="col-3 text-center ml-1">
+                            <i class="fas fa-home centrado" style="font-size: 2rem; color:rgb(0, 0, 0);"></i></div>
+                        <div class="col">
+                            <p style="color: rgb(0, 0, 0);" class="mt-3">Tareas</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-light nav-link rounded "
+                    id="opcion-deselecccionada">
+                    <div class="row">
+                        <div class="col-3 text-center ml-1">
+                            <i class="fas fa-home centrado" style="font-size: 2rem; color:rgb(0, 0, 0);"></i></div>
+                        <div class="col">
+                            <p style="color: rgb(0, 0, 0);" class="mt-3">Historial de pruebas</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-light nav-link rounded "
+                    id="opcion-deselecccionada">
+                    <div class="row">
+                        <div class="col-3 text-center ml-1">
+                            <i class="fas fa-home centrado" style="font-size: 2rem; color:rgb(0, 0, 0);"></i></div>
+                        <div class="col">
+                            <p style="color: rgb(0, 0, 0);" class="mt-3">Opción 3</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <div id="page-content-wrapper">
+
+            <section class="menu py-2 py-md-2 py-lg-3 " id="dashboard">
+                <div class="row">
+                    <div class="col-1">
+                        <button class="btn" id="menu-toggle">
+                            <i class="fas fa-bars" style="font-size: 2rem; color:rgb(255, 255, 255);"></i>
+                        </button>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button></div>
+                    <div class="col-11 p-1">
+                        <div class="row pr-4">
+                            <div class="col-sm-12 col-md-10 text-white h1">
+                                <div class="row">
+
+                                    <h2 class="pr-3">Dashboard</h2>
+
+                                    <a class="nav-link dropdown-toggle projects" href="#" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SASPRE
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">SASPRE</a>
+                                        <a class="dropdown-item" href="#">SASPRE</a>
+                                        <a class="dropdown-item" href="#">SASPRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block col-md-2 ">
+                                <div class="row">
+                                    <div class="col-4" id="configuraciones"><i class=" fas fa-plus"
+                                            style="font-size: 2rem; color:white;"></i></div>
+                                    <div class="col-4" id="configuraciones"><i class="fas fa-bell"
+                                            style="font-size: 2rem; color:white;"></i></div>
+                                    <div class="col-4" id="configuraciones"><i class="fas fa-cog"
+                                            style="font-size: 2rem; color:white;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+
+
+                    <div class="row px-2">
+
+                        <a class=" d-none d-lg-block card mb-3 ml-lg-4  col-lg" data-toggle="modal"
+                            data-target=".bd-example-modal-xl" href="" style="max-width: 540px;" id="botones">
+                            <div class="row no-gutters">
+                                <div class=" d-none col-xl-3 d-xl-block">
+                                    <i class="fas fa-clock centrado"
+                                        style="font-size: 3rem; color:rgb(116, 209, 252);"></i> </div>
+                                <div class="col-12 col-xl-9 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bolder">En progreso</h5>
+                                        <p class="card-text" id="tareas">2 Tareas </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!--MODAL PROGRESO-->
+                        <div class=" modal fade bd-example-modal-xl" tabindex="-1" role="dialog"
+                            aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl" role="document">
+                                <div class="modal-content">
+                                    <h3 class="m-4">Tareas en progreso <i class="fas fa-circle text-center mx-1"
+                                            style="font-size: 1rem; color:rgb(116, 209, 252);"></i></h3>
+
+                                    <div class="row m-4">
+
+                                        <div class="col-6 col-xl-3">
+                                            <p class="h5"> Desarrollo del logotipo</p>
+
+                                        </div>
+                                        <div class="col-6 col-xl-1">
+                                            <p class="rounded" style="background: yellow;">Front-end</p>
+                                        </div>
+                                        <div class="d-none  d-xl-block col-xl-8"></div>
+
+                                        <div class="col-6 col-xl-3">
+                                            <p class="h5"> Desarrollo del logotipo</p>
+
+                                        </div>
+                                        <div class="col-6 col-xl-1">
+                                            <p class="rounded" style="background: rgb(120, 255, 115);">Full stack</p>
+                                        </div>
+                                        <div class="d-none  d-xl-block col-xl-8"></div>
+
+                                        <div class="col-6 col-xl-3">
+                                            <p class="h5"> Desarrollo del logotipo</p>
+
+                                        </div>
+                                        <div class="col-6 col-xl-1">
+                                            <p class="rounded" style="background: rgb(189, 119, 255);">Back-end</p>
+                                        </div>
+                                        <div class="d-none  d-xl-block col-xl-8"></div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class=" d-none d-lg-block card mb-3 ml-lg-4  col-lg" data-toggle="modal"
+                            data-target=".bd-example-modal-x2" href="" style="max-width: 540px;" id="botones">
+                            <div class="row no-gutters">
+                                <div class=" d-none col-xl-3 d-xl-block">
+                                    <i class="fas fa-stop-circle  centrado"
+                                        style="font-size: 3rem; color:rgb(252, 184, 121);"></i> </div>
+                                <div class="col-12 col-xl-9 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bolder">Testing</h5>
+                                        <p class="card-text" id="tareas">2 Tareas </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--MODAL TESTING-->
+                        <div class=" modal fade bd-example-modal-x2" tabindex="-1" role="dialog"
+                            aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl" role="document">
+                                <div class="modal-content">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class=" d-none d-lg-block card mb-3 ml-lg-4  col-lg" data-toggle="modal"
+                            data-target=".bd-example-modal-x3" href="" style="max-width: 540px;" id="botones">
+                            <div class="row no-gutters">
+                                <div class=" d-none col-xl-3 d-xl-block">
+                                    <i class="fas fa-sync-alt centrado p-2  rounded-circle" id="fondorosa"
+                                        style="font-size: 2rem; color:rgb(255, 255, 255);">
+                                    </i> </div>
+                                <div class="col-12 col-xl-9 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bolder">Actualizado</h5>
+                                        <p class="card-text" id="tareas">2 Tareas </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--MODAL ACTUALIZADO-->
+                        <div class=" modal fade bd-example-modal-x3" tabindex="-1" role="dialog"
+                            aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl" role="document">
+                                <div class="modal-content">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class=" d-none d-lg-block card mb-3 ml-lg-4  col-lg" data-toggle="modal"
+                            data-target=".bd-example-modal-x4" href="" style="max-width: 540px;" id="botones">
+                            <div class="row no-gutters">
+                                <div class=" d-none col-xl-3 d-xl-block">
+                                    <i class="fas fa-check-circle centrado"
+                                        style="font-size: 3rem; color:rgb(111, 255, 75);"></i> </div>
+                                <div class="col-12 col-xl-9 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bolder">Abierto</h5>
+                                        <p class="card-text" id="tareas">2 Tareas </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--MODAL ABIERTO-->
+                        <div class=" modal fade bd-example-modal-x4" tabindex="-1" role="dialog"
+                            aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl" role="document">
+                                <div class="modal-content">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class=" d-none d-lg-block card mb-3 ml-lg-4  col-lg mr-lg-4" data-toggle="modal"
+                            data-target=".bd-example-modal-x5" href="" style="max-width: 540px;" id="botones">
+                            <div class="row no-gutters">
+                                <div class=" d-none col-xl-3 d-xl-block">
+                                    <i class="fas fa-times-circle centrado"
+                                        style="font-size: 3rem; color:rgb(255, 75, 75);"></i> </div>
+                                <div class="col-12 col-xl-9 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bolder">Cerrado</h5>
+                                        <p class="card-text" id="tareas">2 Tareas </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--MODAL CERRADO-->
+                        <div class=" modal fade bd-example-modal-x5" tabindex="-1" role="dialog"
+                            aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl" role="document">
+                                <div class="modal-content">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="container-fluid">
+                <section class="menu-principal py-4">
+                    <div class="container-fluid ">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-9 px-4 ">
+                                <div class="row pr-3">
+                                    <div class="col-12 bg-white rounded">
+                                        <div class="table-responsive">
+                                            <table class="table ">
+                                                <thead class="bg-primary  text-white  ">
+                                                    <tr>
+                                                        <th scope="col">Tarea</th>
+                                                        <th scope="col">Status</th>
+                                                        <th scope="col">Exigencia</th>
+                                                        <th scope="col">Responsables</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="bg-white">
+                                                    <tr>
+                                                        <td>Desarrollo de logotipo</td>
+                                                        <td>Abierta</td>
+                                                        <td>Alta</td>
+                                                        <td>img</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+
+                                        </div>
+                                    </div>
+
+                                    <!-- SECCION TAREAS-->
+
+                                    <div class="col-12 rounded bg-white mt-4">
+                                        <p class="h4 pt-4 px-3">Nueva tarea</p>
+                                        <input type="text" class="form-control rounded my-4" placeholder="Nombre tarea">
+                                        <textarea class="form-control rounded mt-4" rows="3"
+                                            placeholder="Descripción"></textarea>
+
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <p class="h5 pt-4">Responsable</p>
+                                                <div class="input-group mb-3">
+                                                    <select class="custom-select" id="inputGroupSelect02">
+                                                        <option selected>Seleccionar</option>
+                                                        <option value="1">Ana Trujillo</option>
+                                                        <option value="2">Giovanni Rovelli</option>
+                                                        <option value="3">Jaime Yorres</option>
+                                                        <option value="4">John Steel</option>
+                                                    </select>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="h5 pt-4">Prioridad</p>
+                                                <div class="input-group mb-3">
+                                                    <select class="custom-select" id="inputGroupSelect02">
+                                                        <option selected>Seleccionar</option>
+                                                        <option value="1">Alta</option>
+                                                        <option value="2">Media</option>
+                                                        <option value="3">Baja</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <p class="h5 pt-4">Fecha</p>
+                                                <div class="input-group date fj-date">
+                                                    <input type="text" class="form-control"><span
+                                                        class="input-group-addon"><i
+                                                            class="glyphicon glyphicon-th"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="h4 pt-3 px-3">Notificaciones</p>
+                                        <textarea class="form-control rounded my-4" rows="3"></textarea>
+                                        <div class="row py-4 m-1">
+                                            <div class="col-8"></div>
+                                            <div class="col p-2 text-center rounded"> <a class=" btn" href="">Limpiar
+                                                    datos</a>
+                                            </div>
+                                            <div class="col p-2 text-center rounded" id="opcion-selecccionada"> <a
+                                                    class=" btn text-white " href="">Publicar</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-sm-12 col-md-3 px-4">
+                                <div class="row bg-white rounded py-2">
+                                    <div class="col-12 h5">
+                                        <div class="row">
+                                            <div class="col-1 text-center ml-5">
+                                                <i class="fas fa-tasks centrado"
+                                                    style="font-size: 2rem; color:rgb(0, 0, 0);"></i></div>
+                                            <div class="col">
+                                                <p style="color: rgb(0, 0, 0);" class="mt-3">Mis tareas</p>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ARCHIVOS BOOTSTRAP JAVASCRIPT -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
