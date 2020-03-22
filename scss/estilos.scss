@@ -1,0 +1,156 @@
+//------------
+// PATRON DE COLORES
+//----------------------
+$principal: #5f0867;
+$secundario: #3886b6;
+$texto: #44484a;
+
+/*-----------------------
+SOBRE ESCRIBIENDO LOS ESTILOS DE BOOTSTRAP
+--------------------------*/
+.bg-primary {
+  background-color: $principal !important;
+}
+
+.text-primary {
+  color: $principal !important;
+}
+
+.btn-primary {
+  background-color: $principal !important;
+  border-color: darken($principal, 20%) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: darken($principal, 10%) !important;
+}
+
+.btn-primary:active {
+  background-color: darken($principal, 20%) !important;
+  border-color: darken($principal, 30%) !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba($principal, 0.5) !important;
+}
+/*-----------------------
+ESTILOS DEL DISEÑO
+--------------------------*/
+
+html {
+  font-size: 13px;
+}
+body {
+  color: $texto;
+  font-family: "Open Sans", sans-serif;
+  background-color: #00000036;
+}
+
+#fondorosa {
+  background: #e95dee;
+}
+
+.projects {
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: white;
+  width: 100px;
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #0c0c0c3b;
+}
+
+#dashboard {
+  background-image: linear-gradient($secundario, $principal);
+}
+
+#opcion-selecccionada {
+  background-image: linear-gradient(#3f2783, $principal);
+  color: white;
+  margin-top: .5rem;
+}
+
+#opcion-deselecccionada{
+  background-image: linear-gradient(#d8d8d8, #c4c4c4);
+  color: black;
+  margin-top: .5rem;
+}
+
+#tareas {
+  color: $principal;
+}
+
+#botones{
+  color: rgb(136, 136, 136);
+}
+#botones:hover,
+#botones:focus {
+  background-color: darken(#ffffff, 30%) !important;
+}
+
+#botones:active {
+  background-color: darken(white, 20%) !important;
+  border-color: darken(rgb(255, 255, 255), 30%) !important;
+}
+
+.configurations{
+  color:white;
+  font-size: 2rem; 
+}
+
+//MENU LATERAL
+
+body {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -20rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 20rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -20rem;
+  }
+}
