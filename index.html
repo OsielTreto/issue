@@ -21,7 +21,7 @@
     <!-- <script src="bootstrap-datepicker/js/bootstrap-datepicker.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="bootstrap-datepicker/css/bootstrap-datepicker.css"> -->
 
-        
+
     <title>issue</title>
 </head>
 
@@ -33,17 +33,17 @@
         <div class=" border-right shadow-lg" id="sidebar-wrapper">
             <div class="sidebar-heading text-center "><img src="/images/issue.png" style="width: 120px;" alt=""> </div>
             <!-- <hr class="bg-primary "> -->
-                <!-- <div class="row">
+            <!-- <div class="row">
                     <div class="col-2 text-left ml-4"><img src="/images/mar.png" style="width: 30px;" alt=""></div>
                     <div class="col pt-2">
                         <p>Marshall Matters</p>
                     </div>
                 </div> -->
-                <div class="line bg-primary"></div>
-                <p class="d-block" id="profile">
-                    <img src="/images/mar.png" style="width: 40px;" alt="profile">
-                    <span id="nameprofile">Marshall Matters</span>
-                </p>
+            <div class="line bg-primary"></div>
+            <p class="d-block" id="profile">
+                <img src="/images/mar.png" style="width: 40px;" alt="profile">
+                <span id="nameprofile">Marshall Matters</span>
+            </p>
 
             <div class="list-group list-group-flush p-3">
                 <!-- <a href="#" class="list-group-item list-group-item-action bg-light nav-link rounded "
@@ -161,6 +161,8 @@
                                 <h3 class="m-4">Tareas en progreso <i class="fas fa-circle text-center mx-1"
                                         style="font-size: 1rem; color:rgb(116, 209, 252);"></i></h3>
 
+                                <div class="line mx-4 " style="background: rgb(230, 230, 230);"></div>
+
                                 <div class="row m-4">
 
                                     <div class="col-6 col-xl-3">
@@ -198,39 +200,39 @@
                     </div>
                     <!--MODAL TESTING-->
                     <div class=" modal fade bd-example-modal-x2" tabindex="-1" role="dialog"
-                    aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl" role="document">
-                        <div class="modal-content">
-                            ...
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                            <div class="modal-content">
+                                ...
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <!--MODAL ACTUALIZADO-->
                     <div class=" modal fade bd-example-modal-x3" tabindex="-1" role="dialog"
-                    aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl" role="document">
-                        <div class="modal-content">
-                            ...
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                            <div class="modal-content">
+                                ...
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <!--MODAL ABIERTO-->
                     <div class=" modal fade bd-example-modal-x4" tabindex="-1" role="dialog"
-                    aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl" role="document">
-                        <div class="modal-content">
-                            ...
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                            <div class="modal-content">
+                                ...
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <!--MODAL CERRADO-->
                     <div class=" modal fade bd-example-modal-x5" tabindex="-1" role="dialog"
-                    aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl" role="document">
-                        <div class="modal-content">
-                            ...
+                        aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                            <div class="modal-content">
+                                ...
+                            </div>
                         </div>
-                    </div>
                     </div>
 
                     <div class="row px-2">
@@ -263,7 +265,7 @@
                                 </div>
                             </div>
                         </a>
-                        
+
                         <a class=" d-none d-lg-block card mb-3 ml-lg-4 col-lg botones" data-toggle="modal"
                             data-target=".bd-example-modal-x3" href="" style="max-width: 540px;">
                             <div class="row no-gutters">
@@ -279,7 +281,7 @@
                                 </div>
                             </div>
                         </a>
-                        
+
                         <a class=" d-none d-lg-block card mb-3 ml-lg-4 col-lg botones" data-toggle="modal"
                             data-target=".bd-example-modal-x4" href="" style="max-width: 540px;">
                             <div class="row no-gutters">
@@ -294,7 +296,7 @@
                                 </div>
                             </div>
                         </a>
-                        
+
                         <a class=" d-none d-lg-block card mb-3 ml-lg-4 col-lg mr-lg-4 botones" data-toggle="modal"
                             data-target=".bd-example-modal-x5" href="" style="max-width: 540px;">
                             <div class="row no-gutters">
@@ -309,7 +311,7 @@
                                 </div>
                             </div>
                         </a>
-                        
+
 
 
                     </div>
@@ -353,21 +355,25 @@
                                     <div class="col-12 rounded bg-white">
                                         <div class="p-4 pt-">
                                             <p class="h4">Nueva tarea</p>
-                                            <div class="line bg-primary my-4"></div>
+                                            <div class="line my-4" style="background: rgb(230, 230, 230);"></div>
                                             <form>
                                                 <div class="form-group">
                                                     <label for="task">Nombre</label>
-                                                    <input id="task" name="task" type="text" class="form-control input" placeholder="Nombre tarea">
+                                                    <input id="task" name="task" type="text" class="form-control input"
+                                                        placeholder="Nombre tarea">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="description">Descripción</label>
-                                                    <textarea id="description" name="description" class="form-control input" rows="6" placeholder="Descripción"></textarea>
+                                                    <textarea id="description" name="description"
+                                                        class="form-control input" rows="6"
+                                                        placeholder="Descripción"></textarea>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col">
                                                         <div class="form-group">
                                                             <label for="responsable">Responsable</label>
-                                                            <select class="form-control" name="responsable" id="responsable">
+                                                            <select class="form-control" name="responsable"
+                                                                id="responsable">
                                                                 <option selected>Seleccionar</option>
                                                                 <option value="1">Ana Trujillo</option>
                                                                 <option value="2">Giovanni Rovelli</option>
@@ -375,33 +381,36 @@
                                                                 <option value="4">John Steel</option>
                                                             </select>
                                                         </div>
-                                                        
+
                                                     </div>
                                                     <div class="col">
                                                         <label for="prioridad">Prioridad</label>
-                                                            <select class="form-control" name="prioridad" id="prioridad">
-                                                                <option selected>Seleccionar</option>
-                                                                <option value="1">Alta</option>
-                                                                <option value="2">Media</option>
-                                                                <option value="3">Baja</option>
-                                                            </select>
+                                                        <select class="form-control" name="prioridad" id="prioridad">
+                                                            <option selected>Seleccionar</option>
+                                                            <option value="1">Alta</option>
+                                                            <option value="2">Media</option>
+                                                            <option value="3">Baja</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col">
                                                         <label for="date">Fecha</label>
-                                                        <input type="text" placeholder="Fecha" name="date" class="form-control" id="datepicker">
+                                                        <input type="text" placeholder="Fecha" name="date"
+                                                            class="form-control" id="datepicker">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="comentarios">Comentarios</label>
-                                                    <textarea class="form-control input" name="comentarios" id="comentarios" rows="3" placeholder="Descripción"></textarea>
+                                                    <textarea class="form-control input" name="comentarios"
+                                                        id="comentarios" rows="3" placeholder="Descripción"></textarea>
                                                 </div>
                                                 <div id="bottombuttons">
                                                     <span id="clean">Limpiar Datos</span>
-                                                    <input class="submit opcion-selecccionada" type="submit" value="Publicar">
+                                                    <input class="submit opcion-selecccionada" type="submit"
+                                                        value="Publicar">
                                                 </div>
                                                 <div class="clearfix"></div>
                                             </form>
-                                            
+
                                             <!-- <div class="row py-4 m-1">
                                                 <div class="col-8"></div>
                                                 <div class="col p-2 text-center rounded"> <a class=" btn" href="">Limpiar
@@ -412,10 +421,64 @@
                                                 </div>
                                             </div> -->
                                         </div>
-                                        
+
 
 
                                     </div>
+                                    <div class="col-12 rounded bg-white mt-4">
+                                        <div class="p-4 pt-">
+                                            <div class=" d-flex flex-row ">
+                                                <p class="h4">Interfaz grafica</p>
+                                                <p class="ml-3 px-3 text-white rounded-pill text-center "
+                                                    style="background: rgb(0,156,221);">En progreso</p>
+                                                <p class="ml-3  px-3 text-white rounded-pill text-center "
+                                                    style=" background: rgb(147,1,1);">Alta</p>
+                                                <i class="ml-3 fas far fa-calendar-alt"
+                                                    style="font-size: 1.5rem; color:rgb(117, 117, 117);"></i>
+                                                <p class="ml-1 " style="color:rgb(117, 117, 117);">10 / 03 / 2020</p>
+                                                <p class="ml-3" style="color:rgb(117, 117, 117);">#123456789</p>
+                                            </div>
+                                            <div class="line  my-4" style="background: rgb(230, 230, 230);"></div>
+                                            <form action="">
+
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ex
+                                                    nemo
+                                                    mollitia porro error rem soluta similique recusandae, et ducimus
+                                                    esse
+                                                    minima, sit nesciunt libero magni architecto consequuntur odit
+                                                    officia. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Amet aspernatur animi, eveniet quo quia, velit soluta voluptate ex
+                                                    nam eius optio laboriosam nulla sapiente at deserunt dolorem
+                                                    expedita, architecto nostrum. Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Molestiae tenetur eaque amet itaque corporis dolor
+                                                    officiis modi distinctio illum facere, magni obcaecati mollitia,
+                                                    aliquid, eligendi voluptates asperiores a ullam error?
+                                                </p>
+
+                                                <div class="line  my-4" style="background: rgb(230, 230, 230);"></div>
+
+
+                                                <h5 class="my-4">Responsables</h5>
+
+                                                <div class="row">
+                                                    <div class="col-1 text-center mx-1">
+                                                        <img src="/images/mar.png" style="width: 60px;" alt="">
+                                                        <p style="color: rgb(97, 97, 97);">Renato</p>
+                                                    </div>
+                                                    <div class="col-1 text-center mx-1"><img src="/images/mar.png"
+                                                            style="width: 60px;" alt="">
+                                                        <p style="color: rgb(97, 97, 97);">Guillermo</p>
+                                                    </div>
+                                                    <div class="col-1 text-center mx-1"><img src="/images/mar.png"
+                                                            style="width: 60px;" alt="">
+                                                        <p style="color: rgb(97, 97, 97);">Viñas</p>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+
                                 </div>
 
 
@@ -435,69 +498,133 @@
                                         
                                 </div>
                             </div> -->
-                            <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                  <div class="card-header" id="headingOne">
-                                    <div class="titlecolapse" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <span class="fas fa-tasks iconcolapse"></span>
-                                        <span class="textcolapse">Mis tareas</span>
-                                        <span class="fas fa-sort-down iconright"></span>
-                                    </div>
-                                  </div>
-                              
-                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body p-0">
-                                        <ul class="list-group">
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                              Cras justo odio
-                                              <span class="badge badge-primary badge-pill">14</span>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                              Dapibus ac facilisis in
-                                              <span class="badge badge-primary badge-pill">2</span>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                              Morbi leo risus
-                                              <span class="badge badge-primary badge-pill">1</span>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Morbi leo risus
-                                                <span class="badge badge-primary badge-pill">1</span>
-                                              </li>
-                                              <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                Morbi leo risus
-                                                <span class="badge badge-primary badge-pill">1</span>
-                                              </li>
-                                          </ul>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <div class="titlecolapse" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                <span class="fas fa-tasks iconcolapse"></span>
+                                                <span class="textcolapse">Mis tareas</span>
+                                                <span class="fas fa-sort-down iconright"></span>
+                                            </div>
                                         </div>
-                                  </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body p-0">
+                                                <ul class="list-group">
+
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between  align-content-center">
+                                                        <i class="fas fa-circle mt-1 mr-2"
+                                                            style="font-size: 0.5rem; color:rgb(41, 235, 66);"></i>
+                                                        Logotipo
+                                                        <span class="badge badge-primary badge-pill text-right">2</span>
+                                                    </li>
+
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <i class="fas fa-circle mt-1 mr-2"
+                                                            style="font-size: 0.5rem; color:rgb(235, 183, 41);"></i>
+                                                        Interfaz grafica
+                                                        <span class="badge badge-primary badge-pill">2</span>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <i class="fas fa-circle mt-1 mr-2"
+                                                            style="font-size: 0.5rem; color:rgb(249, 72, 255);"></i>
+                                                        Colores
+                                                        <span class="badge badge-primary badge-pill">1</span>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between align-items-center">
+                                                        <i class="fas fa-circle mt-1 mr-2"
+                                                            style="font-size: 0.5rem; color:rgb(243, 46, 11);"></i>
+                                                        Estandarez
+                                                        <span class="badge badge-primary badge-pill">1</span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                        </div>
-                        <div class="accordion mt-3" id="accordionExample1">
-                            <div class="card">
-                              <div class="card-header" id="headingOne">
-                                <div class="titlecolapse" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                                    <span class="fas fa-clipboard iconcolapse"></span>
-                                    <span class="textcolapse">Notas</span>
-                                    <span class="fas fa-sort-down iconright"></span>
+                                <div class="accordion mt-3" id="accordionExample1">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <div class="titlecolapse" data-toggle="collapse" data-target="#collapseOne1"
+                                                aria-expanded="true" aria-controls="collapseOne1">
+                                                <span class="fas fa-clipboard iconcolapse"></span>
+                                                <span class="textcolapse">Notas</span>
+                                                <span class="fas fa-sort-down iconright"></span>
+                                            </div>
+                                        </div>
+                                        <!-- MODAL NOTAS -->
+
+                                        <div class=" modal fade modal-nota-1" tabindex="-1" role="dialog"
+                                            aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                                <div class="modal-content">
+                                                    <h3 class="m-4">Nota </h3>
+                                                    <div class="line mx-4 " style="background: rgb(230, 230, 230);"></div>
+
+                                                    
+                                                    <p class="m-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+                                                        exercitationem cum perferendis neque aperiam laudantium dolore
+                                                        amet, voluptates est illo qui inventore, consectetur quasi
+                                                        veniam aut! Dolores dolorem iure tempore. Lorem ipsum dolor sit
+                                                        amet consectetur, adipisicing elit. Animi, fuga ipsa? Similique,
+                                                        laboriosam, pariatur fugiat error aliquid ea qui vero nostrum
+                                                        doloremque ut debitis sunt natus. Architecto harum dignissimos
+                                                        autem? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                        Ad exercitationem laborum cupiditate esse nostrum expedita in
+                                                        voluptates, beatae quaerat eos, quia adipisci dolores vel ex qui
+                                                        voluptatibus rem praesentium architecto!</p>
+
+                                                    <p class="m-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+                                                        exercitationem cum perferendis neque aperiam laudantium dolore
+                                                        amet, voluptates est illo qui inventore, consectetur quasi
+                                                        veniam aut! Dolores dolorem iure tempore. Lorem ipsum dolor sit
+                                                        amet consectetur, adipisicing elit. Animi, fuga ipsa? Similique,
+                                                        laboriosam, pariatur fugiat error aliquid ea qui vero nostrum
+                                                        doloremque ut debitis sunt natus. Architecto harum dignissimos
+                                                        autem? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                        Ad exercitationem laborum cupiditate esse nostrum expedita in
+                                                        voluptates, beatae quaerat eos, quia adipisci dolores vel ex qui
+                                                        voluptatibus rem praesentium architecto!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample1">
+                                            <div class="card-body p-0">
+                                                <ul class="list-group list-group-flush">
+                                                    
+                                                    <li class="list-group-item " data-toggle="modal"
+                                                        data-target=".modal-nota-1">
+                                                        <p class="font-weight-bold">Asunto</p>
+                                                        <p>Morbi </p>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <p class="font-weight-bold">Asunto</p>
+                                                        <p>Morbi </p>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <p class="font-weight-bold">Asunto</p>
+                                                        <p>Morbi </p>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <p class="font-weight-bold">Asunto</p>
+                                                        <p>Morbi </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                          
-                              <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample1">
-                                <div class="card-body p-0">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Cras justo odio</li>
-                                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                                        <li class="list-group-item">Morbi leo risus</li>
-                                        <li class="list-group-item">Porta ac consectetur ac</li>
-                                        <li class="list-group-item">Vestibulum at eros</li>
-                                      </ul>    
-                                </div>
-                              </div>
                             </div>
-                    </div>
                         </div>
-                    </div>
                 </section>
             </div>
         </div>
@@ -523,10 +650,9 @@
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
-        $( function() {
-            $( "#datepicker" ).datepicker();
-        } );
-        
+        $(function () {
+            $("#datepicker").datepicker();
+        });
     </script>
 
 </body>
